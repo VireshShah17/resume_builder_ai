@@ -1,0 +1,49 @@
+# =========================
+# Security & Configurations
+# =========================
+# NEVER commit environment variables or secrets!
+.env
+.env.*
+*.pem
+secrets.json
+
+# =========================
+# Python & Virtual Environments
+# =========================
+# Virtual environments (massive folders, should never be tracked)
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest and coverage reports (for when we write tests later)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Database
+# =========================
+# We use PostgreSQL, but ignore local SQLite files just in case
+*.sqlite3
+*.db
+
+# =========================
+# IDEs & OS Files
+# =========================
+# VS Code settings and workspace files
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm (if another dev joins using it)
+.idea/
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
